@@ -20,7 +20,7 @@ await connectDB();
 await connectCloudniary();
 
 //origns
-const allowedOrigins = ['http://localhost:5173', 'https://grorcrey-backend.vercel.app']
+const allowedOrigins = ['http://localhost:5173', 'https://grorcrey-backend.vercel.app','https://greencart-bice.vercel.app']
 
 app.post('/stripe', express.raw({type: 'application/json'}), stripeWebhooks)
 
