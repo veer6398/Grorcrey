@@ -7,9 +7,9 @@ const authUser = async (req, res, next) => {
     if (decoded.id) {
       req.userId = decoded.id; 
       next();
-    } else {
-      return res.status(401).json({ success: false, message: 'Not Authorized' });
-    }
+     } // else {
+    //   return res.status(401).json({ success: false, message: 'Not Authorized' });
+    // }
   } catch (error) {
     return res.status(401).json({ success: false, message: error.message });
   }
